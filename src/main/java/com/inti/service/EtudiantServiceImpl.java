@@ -19,4 +19,11 @@ public class EtudiantServiceImpl implements IEtudiantService {
 		return ier.findById(id).get();
 	}
 
+	@Override
+	public void saveEtudiant(Etudiant etu) {
+		
+		ier.save(etu);
+		
+	}
+
 }
